@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Grooming - Peluquería Canina</title>
     <link rel="icon" type="image/png" href="Imagenes/Ico.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#B8956A">
+    <link rel="apple-touch-icon" href="Imagenes/Ico.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -232,5 +235,14 @@ Con paciencia, amor y mucha dedicación, cuido de su higiene mientras respeto su
         -->
     </footer>
         <script src="script.js"></script>
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function() {
+                    navigator.serviceWorker.register('service-worker.js')
+                      .then(function(reg) { console.log('SW registrado:', reg.scope); })
+                      .catch(function(err) { console.log('Registro SW falló:', err); });
+                });
+            }
+        </script>
 </body>
 </html>

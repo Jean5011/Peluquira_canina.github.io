@@ -1,0 +1,20 @@
+{
+  "name": "Pet Grooming - Peluquería Canina",
+  "short_name": "PetGrooming",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#B8956A",
+  "icons": [
+    {
+      "src": "Imagenes/Ico.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "Imagenes/Ico.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
